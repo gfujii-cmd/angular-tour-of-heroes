@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from '../hero';
+import { Hero } from '../hero'; //Importing the heroe interface
 
 @Component({
   selector: 'app-heroes',
@@ -7,7 +7,7 @@ import { Hero } from '../hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
+  hero: Hero = { //creating new hero
     id: 1,
     name: 'Windstorm'
   }
