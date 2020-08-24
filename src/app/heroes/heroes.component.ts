@@ -16,7 +16,8 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService){} //hero injection
 
   getHeroes(): void {
-    this.heroes = this.heroService.getHeroes(); //retrieve the heroes from the service
+    this.heroService.getHeroes()
+      .subscribe(heroes => this.heroes = heroes); //retrieve the heroes from the service
   }
 
   onSelect(hero: Hero): void{
