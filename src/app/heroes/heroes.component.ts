@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero'; //Importing the hero interface
 import { HEROES } from '../mock-heroes'; // Importing the mock list of heroes to treat
+import { HeroService } from "../hero.service";
 
 @Component({
   selector: 'app-heroes',
