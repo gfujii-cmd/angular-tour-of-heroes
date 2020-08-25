@@ -1,9 +1,9 @@
 <!--After the pipe we can format the string to uppercase. Built-in UppercasePipe-->
 <h2>My Heroes</h2>
 <ul class="heroes">
-    <li *ngFor="let hero of heroes" 
-    [class.selected]= "hero === selectedHero"
-    (click)="onSelect(hero)">
+    <li *ngFor="let hero of heroes">
+      <a routerLink="/detail/{{hero.id}}">
         <span class="badge">{{hero.id}}</span> {{hero.name}}
+      </a>
     </li>
 </ul>
